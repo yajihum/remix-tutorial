@@ -8,5 +8,5 @@ export const action = async ({ params }: ActionFunctionArgs) => {
   invariant(params.contactId, 'Missing contactId param');
 
   await deleteContact(params.contactId);
-  return redirect(`/`);
+  return redirect('/');
 };
